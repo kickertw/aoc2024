@@ -123,6 +123,10 @@ def ternary_up_to_n_places(num, n):
     return ("".join(reversed(nums))).zfill(n)
 
 
+def convert_strings_to_grid(input: List[str]) -> List[List[str]]:
+    return [list(row) for row in input]
+
+
 class Direction(Enum):
     UNKNOWN = "unknown"
     INCREASING = "increasing"
